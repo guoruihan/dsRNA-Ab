@@ -22,6 +22,7 @@ import os
 import sys
 import tempfile
 from pathlib import Path
+from tqdm import tqdm
 
 from Bio.PDB import MMCIFParser
 from Bio.PDB.NeighborSearch import NeighborSearch
@@ -198,7 +199,7 @@ def main(argv: list[str]) -> int:
     satisfied = []
     total = 0
 
-    for cif_gz_path in cif_files:
+    for cif_gz_path in tqdm(cif_files):
         total += 1
         pdb_id = cif_gz_path.name.replace(".cif.gz", "")
         try:
