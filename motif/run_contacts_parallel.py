@@ -22,6 +22,7 @@ import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from tqdm import tqdm
 
 
 def discover_shards(root: Path) -> list[str]:
@@ -152,7 +153,7 @@ def main(argv: list[str]) -> int:
             for shard in shards
         ]
 
-        for fut in as_completed(futures):
+        for fut in tqdm(as_completed(futures)):
             shard, rc = fut.result()
             if rc != 0:
                 failures.append((shard, rc))
