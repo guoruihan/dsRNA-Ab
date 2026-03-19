@@ -1,0 +1,20 @@
+{
+  "dialect": "alphafold3",
+  "version": 3,
+  "name": "rna_96",
+  "sequences": [
+    {
+      "rna": {
+        "id": "A",
+        "sequence": "CACAAUGAUGAACAAUACUGCUGGAGCCACAGAGAGGCACAAGUGUGUGUGCCAGAUUGCCUGUGUGUAUGUGUGUCCUUGUCUGUGCAUGCACACGUGAG",
+        "modifications": [],
+        "unpairedMsa": ">Original query\nCACAAUGAUGAACAAUACUGCUGGAGCCACAGAGAGGCACAAGUGUGUGUGCCAGAUUGCCUGUGUGUAUGUGUGUCCUUGUCUGUGCAUGCACACGUGAG\n"
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "bondedAtomPairs": null,
+  "userCCD": null
+}

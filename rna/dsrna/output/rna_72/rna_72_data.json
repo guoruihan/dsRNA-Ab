@@ -1,0 +1,20 @@
+{
+  "dialect": "alphafold3",
+  "version": 3,
+  "name": "rna_72",
+  "sequences": [
+    {
+      "rna": {
+        "id": "A",
+        "sequence": "GUCGUCUACGGCCAUACCACCCUGAACGCGCCCGAUCUCGUCUGAUCUCGGAAGCUAAGCAGGGUCGGGCCUGGUUAGUACUUGGAUGGGAGACCGCCUGG",
+        "modifications": [],
+        "unpairedMsa": ">Original query\nGUCGUCUACGGCCAUACCACCCUGAACGCGCCCGAUCUCGUCUGAUCUCGGAAGCUAAGCAGGGUCGGGCCUGGUUAGUACUUGGAUGGGAGACCGCCUGG\n"
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "bondedAtomPairs": null,
+  "userCCD": null
+}
