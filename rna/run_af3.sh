@@ -16,10 +16,10 @@ INPUT_DIR="$2"
 OUTPUT_DIR="$3"
 
 # Python 可执行环境
-PYTHON_BIN="/datapool/data2/home/pengxingang/anaconda3/envs/af3/bin/python"
+PYTHON_BIN="/datapool/data2/home/ruihan/micromamba/envs/af3_ruihan/bin/python"
 
 # AF3 脚本位置
-RUN_SCRIPT="/datapool/data2/home/pengxingang/data3/pengxingang/af3/alphafold3/run_alphafold.py"
+RUN_SCRIPT="/datapool/data2/home/ruihan/code/af3_ruihan/run_alphafold.py"
 
 # 模型目录与数据库目录（如果你希望也能参数化，可以把它们也做成参数）
 MODEL_DIR="/datapool/data2/home/pengxingang/data3/pengxingang/af3/alphafold3/models/"
