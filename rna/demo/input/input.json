@@ -1,6 +1,14 @@
 {
-    "rna": {
-      "id": "A",
-      "sequence": "AGCU"
-    }
-}
+    "name": "your_job_name",
+    "sequences": [
+      {
+        "rna": {
+          "id": "A",
+          "sequence": "ACGU"
+        }
+      }
+    ],
+    "modelSeeds": [1],
+    "dialect": "alphafold3",
+    "version": 1
+  }
