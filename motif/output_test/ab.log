@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/ruihan/Documents/Projects/dsRNA-Ab/motif/check_protein_rna_contacts_aa.py", line 25, in <module>
+    from tqdm import tqdm
+ModuleNotFoundError: No module named 'tqdm'

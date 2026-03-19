@@ -22,7 +22,6 @@ import os
 import sys
 import tempfile
 from pathlib import Path
-from tqdm import tqdm
 
 from Bio.PDB import MMCIFParser
 from Bio.PDB.NeighborSearch import NeighborSearch
@@ -181,6 +180,12 @@ def main(argv: list[str]) -> int:
         default=0,
         help="Max number of files to process (0 means no limit).",
     )
+    parser.add_argument(
+        "--outdir",
+        type=Path,
+        default=Path.cwd() / "output",
+        help="Write per-shard results into this directory (default: ./output relative to current working dir).",
+    )
     args = parser.parse_args(argv)
 
     shard_dir = args.root / args.shard
@@ -199,7 +204,7 @@ def main(argv: list[str]) -> int:
     satisfied = []
     total = 0
 
-    for cif_gz_path in tqdm(cif_files):
+    for cif_gz_path in cif_files:
         total += 1
         pdb_id = cif_gz_path.name.replace(".cif.gz", "")
         try:
@@ -215,6 +220,23 @@ def main(argv: list[str]) -> int:
 
         if res.get("satisfy"):
             satisfied.append((pdb_id, res.get("min_dist"), res.get("protein_chains"), res.get("rna_chains")))
+
+    args.outdir.mkdir(parents=True, exist_ok=True)
+
+    # Write per-shard result for later collection.
+    # Format: TSV with header.
+    out_tsv = args.outdir / f"{args.shard}.tsv"
+    tmp_tsv = out_tsv.with_suffix(out_tsv.suffix + ".tmp")
+    with tmp_tsv.open("w", encoding="utf-8", newline="") as f_out:
+        f_out.write("pdb_id\tmin_dist_A\tprotein_chains\trna_chains\n")
+        for pdb_id, min_dist, protein_chains, rna_chains in sorted(
+            satisfied, key=lambda x: (x[1] if x[1] is not None else 1e9)
+        ):
+            md = f"{min_dist:.3f}" if min_dist is not None else "NA"
+            f_out.write(
+                f"{pdb_id}\t{md}\t{','.join(protein_chains)}\t{','.join(rna_chains)}\n"
+            )
+    tmp_tsv.replace(out_tsv)
 
     print(f"Processed files: {total}")
     print(f"Satisfied: {len(satisfied)}")
