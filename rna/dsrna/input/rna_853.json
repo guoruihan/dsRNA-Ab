@@ -1,0 +1,17 @@
+{
+  "name": "rna_853",
+  "sequences": [
+    {
+      "rna": {
+        "id": "853",
+        "sequence": "AGAAUUAAUGUGAAUUGCAGGACACAUUGAUCAUCGACACUUCGAACGCACUUGCGGCCCCGGGUUCCUCCCGGGGCUACGCCUGUCUGAGCGUCGCUUGG",
+        "unpairedMsa": ""
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}

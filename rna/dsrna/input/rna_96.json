@@ -1,0 +1,17 @@
+{
+  "name": "rna_96",
+  "sequences": [
+    {
+      "rna": {
+        "id": "96",
+        "sequence": "CACAAUGAUGAACAAUACUGCUGGAGCCACAGAGAGGCACAAGUGUGUGUGCCAGAUUGCCUGUGUGUAUGUGUGUCCUUGUCUGUGCAUGCACACGUGAG",
+        "unpairedMsa": ""
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}

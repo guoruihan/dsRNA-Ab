@@ -1,0 +1,17 @@
+{
+  "name": "rna_409",
+  "sequences": [
+    {
+      "rna": {
+        "id": "409",
+        "sequence": "GACUCUUAGCGGUGGAUCACUCGGCUCGUGCGUCGAUGAAGAACGCAGCUAGCUGCGAGAAUUAAUGUGAAUUGCAGGACACAUUGAUCAUCGACACUUCG",
+        "unpairedMsa": ""
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}

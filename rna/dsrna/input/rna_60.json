@@ -1,0 +1,17 @@
+{
+  "name": "rna_60",
+  "sequences": [
+    {
+      "rna": {
+        "id": "60",
+        "sequence": "CUCGUCUACGGCCAUACCACCCUGAACGCGCCCGAUCUCGUCUGAUCUCGGAAGCUAAGCAGGGUCGGGCCUGGUUAGUACUUGGAUGGGAGACCGCCUGG",
+        "unpairedMsa": ""
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}

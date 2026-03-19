@@ -1,0 +1,17 @@
+{
+  "name": "rna_132",
+  "sequences": [
+    {
+      "rna": {
+        "id": "132",
+        "sequence": "CCACAUCCAAGGAAGGCAGCAGGCGCGCAAAUUACCCACUCCCGACCCGGGGAGGUAGUGACGAAAAAUAACAAUACAGGACUCUUUCGAGGCCCUGUAAU",
+        "unpairedMsa": ""
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}

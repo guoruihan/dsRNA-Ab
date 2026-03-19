@@ -1,0 +1,17 @@
+{
+  "name": "rna_77",
+  "sequences": [
+    {
+      "rna": {
+        "id": "77",
+        "sequence": "GUCUACGGCCAUACCACCCUGAACGCGCCCGACCUCGUCUGAUCUCGGAAGCUAAGCAGGGUCGGGCCUGGUUAGUACUUGGAUGGGAGACCGCC",
+        "unpairedMsa": ""
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}

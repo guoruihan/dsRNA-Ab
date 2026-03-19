@@ -1,0 +1,17 @@
+{
+  "name": "rna_98",
+  "sequences": [
+    {
+      "rna": {
+        "id": "98",
+        "sequence": "GUCUACGGCCAUACCACCCUGAACGCGCCCGAUCUCGUCUGAUCUCGGAAGCUAAUCAGGGUCGGGCCUGGUUAGUACUUGGAUGGGAGACCGCC",
+        "unpairedMsa": ""
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}

@@ -1,0 +1,17 @@
+{
+  "name": "rna_72",
+  "sequences": [
+    {
+      "rna": {
+        "id": "72",
+        "sequence": "GUCGUCUACGGCCAUACCACCCUGAACGCGCCCGAUCUCGUCUGAUCUCGGAAGCUAAGCAGGGUCGGGCCUGGUUAGUACUUGGAUGGGAGACCGCCUGG",
+        "unpairedMsa": ""
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}

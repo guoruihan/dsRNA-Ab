@@ -1,0 +1,17 @@
+{
+  "name": "rna_104",
+  "sequences": [
+    {
+      "rna": {
+        "id": "104",
+        "sequence": "GUCUACGGCCAUACCACCCUGAACGCGCCCGAUCUCGUCUGAUCUCGGAAGCUAAGCAGGGUCGGGCCUGGGUAGUACUUGGAUGGGAGACCGCC",
+        "unpairedMsa": ""
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}

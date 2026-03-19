@@ -1,0 +1,17 @@
+{
+  "name": "rna_18",
+  "sequences": [
+    {
+      "rna": {
+        "id": "18",
+        "sequence": "GUCUACGGCCAUACCACCCUGAACGCGCCCGAUCUCGUCUGAUCUCGGAAGCUAAGCAGGGACGGGCCUGGUUAGUACUUGGAUGGGAGACCGCC",
+        "unpairedMsa": ""
+      }
+    }
+  ],
+  "modelSeeds": [
+    1
+  ],
+  "dialect": "alphafold3",
+  "version": 1
+}
