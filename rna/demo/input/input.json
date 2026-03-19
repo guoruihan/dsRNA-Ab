@@ -4,7 +4,9 @@
       {
         "rna": {
           "id": "A",
-          "sequence": "ACGU"
+          "sequence": "ACGU",
+          "unpairedMsa": "",
+          "pairedMsa": ""
         }
       }
     ],
