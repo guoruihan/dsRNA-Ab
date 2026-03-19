@@ -3,7 +3,7 @@
   "sequences": [
     {
       "rna": {
-        "id": "2",
+        "id": "A",
         "sequence": "GUCUACGGCCAUACCACCCUGAACGCGCCCGAUCUCGUCUGAUCUCGGAAGCUAAGCAGGGUCGGGCCUGGUUAGUACUUGGAUGGGAGACCGCC",
         "unpairedMsa": ""
       }

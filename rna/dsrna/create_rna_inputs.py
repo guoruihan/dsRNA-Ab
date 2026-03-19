@@ -44,6 +44,12 @@ def main(argv: list[str]) -> int:
         help="modelSeeds 中使用的随机种子（默认 1）",
     )
     parser.add_argument(
+        "--rna_id",
+        type=str,
+        default="A",
+        help="AF3 输入里 rna.id 的固定链名（默认 'A'）",
+    )
+    parser.add_argument(
         "--flat",
         action="store_true",
         help="扁平输出：直接在 rna/dsrna/input 下生成 rna_{id}.json（不使用子目录）",
@@ -57,6 +63,7 @@ def main(argv: list[str]) -> int:
     args = parser.parse_args(argv)
     ref_path: Path = args.ref
     out_dir: Path = args.out
+    rna_chain_id: str = str(args.rna_id).strip() or "A"
 
     if not ref_path.exists():
         raise FileNotFoundError(f"ref 文件不存在: {ref_path}")
@@ -91,7 +98,8 @@ def main(argv: list[str]) -> int:
                 "sequences": [
                     {
                         "rna": {
-                            "id": row_id,
+                            # 多个样本分别作为独立作业时，通常只需要固定单条RNA链名为 "A"
+                            "id": rna_chain_id,
                             "sequence": seq,
                             # 和 demo 保持一致：初始输入为空，后续 pipeline 会生成/填充
                             "unpairedMsa": "",
